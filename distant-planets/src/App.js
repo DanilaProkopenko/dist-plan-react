@@ -13,17 +13,19 @@ import {
   Switch,
 } from 'react-router-dom';
 
-
 function App() {
   return (
     <Router>
       <div className="App">
         <Navbar />
 
+      {/* как я понял, все нужные ссылки я помещаю вот сюда, и тут же прописываю пути */}
         <Switch >
           <Route exact path="/" component={Home} />
+          {/* сейчас у меня проблемы вот в этом компоненте ниже, в нем я прописал link, и соответсвенно, как я думаю, этот link находится внетри router */}
           <Route exact path="/ourTours" component={OurTours} />
           <Route exact path="/contact" component={Contact} />
+          {/* ссылка на карточку планеты по id */}
           <Route exact path="/planet/:id" component={Planet} />
           <Route exact path="/planet/registration" component={Registration} />
           <Route component={NotFound} />

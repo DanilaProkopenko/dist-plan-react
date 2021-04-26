@@ -39,6 +39,7 @@ const OurTours = () => {
 
                   <div class="button-for-cart-planet">
                     <div class="text-for-button">
+                      {/* Но вот этот линк не работает */}
                       <Link to={`/planet/${planet.id}`}>
                         Отправиться
                     </Link>
