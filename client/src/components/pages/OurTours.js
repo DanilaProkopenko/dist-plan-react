@@ -1,7 +1,8 @@
 import React, { useState, useEffect } from "react";
 import '../../css/our-tours.css'
 import axios from 'axios'
-import {Link} from 'react-router-dom'
+import { Link } from 'react-router-dom'
+import Heading from "./ourTours/Heading";
 
 const OurTours = () => {
   const [planets, setPlanet] = useState([]);
@@ -15,43 +16,34 @@ const OurTours = () => {
     loadPlanets()
   }, []);
 
-
   return (
-    <div class="content">
-      <div class="wrapper">
-        <div class="main-content">
-          <div class="container">
-            <div class="headings">
-              <div class="text">
-                Наши туры
-                        </div>
-            </div>
+    <div className="content">
+      <div className="wrapper">
+        <div className="main-content">
+          <div className="container">
+            <Heading />
 
             {planets.map((planet, index) => (
-              <div class="planet-cart">
-                <div class="information">
-                  <div class="under-text">
+              <div className="planet-cart">
+                <div className="information">
+                  <div className="under-text">
                     {planet.name}
+
                   </div>
-                  <div class="bottom-text">
+                  <div className="bottom-text">
                     {planet.shot_discription}
                   </div>
 
-                  <div class="button-for-cart-planet">
-                    <div class="text-for-button">
-                      {/* Но вот этот линк не работает */}
+                  <div className="button-for-cart-planet">
+                    <div className="text-for-button">
                       <Link to={`/planet/${planet.id}`}>
                         Отправиться
                     </Link>
-                      {/* <a href="/>">Отправиться</a> */}
                     </div>
                   </div>
                 </div>
-                <div class="planeta">
-                  {/* <img src="img/planets_image/${planet.img}.png" alt="" />
-                   */}
+                <div className="planeta">
                   <img src="../../img/planets_image/mars.png" alt="" />
-
                 </div>
               </div>
             ))}

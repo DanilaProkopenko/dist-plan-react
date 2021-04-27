@@ -2,15 +2,15 @@ import React, { useState, useEffect } from "react";
 import '../../css/our-tours.css'
 import axios from 'axios'
 import '../../css/registrationcopy.css'
-import {Link, useParams} from 'react-router-dom'
+import {useParams} from 'react-router-dom'
+import Heading from "./registration/Heading";
+import Button from "./registration/Button";
+import Checkbox from "./registration/Checkbox";
+import InputName from './registration/InputName';
 
 const Registration = () => {
     const [planet, setPlanet] = useState({
         name: "",
-        long_discription_1: "",
-        long_discription_4: "",
-        long_discription_3: "",
-        long_discription_4: ""
       });
     
       const { id } = useParams();
@@ -26,59 +26,31 @@ const Registration = () => {
 
 
   return (
-    <div class="content">
-        <div class="wrapper">
+    <div className="content">
+        <div className="wrapper">
 
-            <div class="main-content">
-                <div class="heading">
-                    <div class="container">
-                        <div class="text">
-                            Заказ
-                        </div>
-                    </div>
-                </div>
+            <div className="main-content">
+               <Heading />
 
-                <div class="planet-cart">
-                    <div class="container">
-                        <div class="under-text">
+                <div className="planet-cart">
+                    <div className="container">
+                        <div className="under-text">
                             {planet.name}
                         </div>
-                        <div class="planeta">
+                        <div className="planeta">
                             <img src="/img/planets_image/<?= $planet['planet_image'] ?>.png" alt=""/>
                         </div>
                         <form action="">
-                            <div class="input">
-                                <input type="text" placeholder="Имя"/>
-                                <input type="text" placeholder="Фамилия"/>
-                                <input type="text" placeholder="Количество людей"/>
+                            <InputName />
 
-                                <div class="radio">
-                                        <div class="button">1</div>
-                                        <div class="button">2</div>
-                                        <div class="button">3</div>
-                                        <div class="button">4</div>
-                                </div>
-
-                                <input type="text" placeholder="Номер телефона"/>
-                            </div>
-
-                            <label class="checkbox">
-                                <input class="checkbox-login01" type="checkbox"/>
-                                <span class="style-login01"></span>
-                                <span class="text-login01">Согласен на
-                                    обработку и предоставления своих данных</span>
-                            </label>
-                            <div class="bottom_text">
+                            <Checkbox />
+                            <div className="bottom_text">
                                 <p>При заказе вы оставляете нам свои данные, мы с вами свяжемся, проведем обследования,
                                     необходимые для путешествия на планету `{planet.name}`, и после заполним все необходимые
                                     документы.
                                 </p>
                             </div>
-                            <div class="button-for-cart-planet">
-                                <div class="text-for-button">
-                                    Заказать
-                                </div>
-                            </div>
+                            <Button/>
                         </form>
 
                     </div>

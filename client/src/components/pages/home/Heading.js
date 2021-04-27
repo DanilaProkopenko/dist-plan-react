@@ -2,22 +2,22 @@ import React from 'react';
 import planet from '../../../img/ФОН ПЛАНЕТА.png'
 const Heading = () => {
     return (
-        <div class="heading">
-            <div class="grid">
-                <div class="square">
+        <div className="heading">
+            <div className="grid">
+                <div className="square">
 
                 </div>
-                <div class="text">
-                    <div class="under-text">
+                <div className="text">
+                    <div className="under-text">
                         Tours to
                                     </div>
-                    <div class="bottom-text">
+                    <div className="bottom-text">
                         Distant planets
                                     </div>
                 </div>
             </div>
-            <div class="grid">
-                <div class="background-planets">
+            <div className="grid">
+                <div className="background-planets">
                     <img src={planet} alt="" />
                 </div>
             </div>

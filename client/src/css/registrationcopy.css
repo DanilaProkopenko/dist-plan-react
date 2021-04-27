@@ -39,6 +39,7 @@ body {
 }
 
 .main-content .planet-cart {
+  display: inline-block;
   margin-top: 50px;
 }
 
@@ -421,5 +422,6 @@ body {
   position: absolute;
   top: 15px;
   left: 20px;
+  text-decoration: none;
 }
 /*# sourceMappingURL=registrationcopy.css.map */

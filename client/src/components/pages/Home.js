@@ -9,18 +9,18 @@ import Slider from "./home/Slider";
 const Home = () => {
   
   return (
-    <div class="content">
-        <div class="wrapper">
-            <div class="black-back">
-                <div class="container">
-                    <div class="main-content">
+    <div className="content">
+        <div className="wrapper">
+            <div className="black-back">
+                <div className="container">
+                    <div className="main-content">
                       <Heading />
                       <ButtonForHeading />
                     </div>
                 </div>
             </div>
-            <div class="about">
-                <div class="container">
+            <div className="about">
+                <div className="container">
                     <InfornationBlock />
                     <Slider />
                     <ButtonForInformation />
