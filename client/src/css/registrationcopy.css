@@ -1,7 +1,7 @@
 @charset "UTF-8";
 body {
   background-color: #000;
-  background-image: url(/img/ФОН-ЗВЕЗДЫ.png);
+  background-image: url(../img/ФОН-ЗВЕЗДЫ.png);
   background-attachment: fixed;
 }
 

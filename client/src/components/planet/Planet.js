@@ -89,7 +89,9 @@ const Planet = () => {
                 <a href="/registrationcopy.php?id=<?=$planet['id']?>">
                   <div class="button-for-cart-planet">
                     <div class="text-for-button">
-                      Отправиться
+                      <Link to={`/planet/registration/${planet.id}`}>
+                        Отправиться
+                    </Link>
                                     </div>
                   </div>
                 </a>

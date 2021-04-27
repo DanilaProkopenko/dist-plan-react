@@ -1,5 +1,5 @@
 import React from 'react';
-
+import planet from '../../../img/ФОН ПЛАНЕТА.png'
 const Heading = () => {
     return (
         <div class="heading">
@@ -18,7 +18,7 @@ const Heading = () => {
             </div>
             <div class="grid">
                 <div class="background-planets">
-                    <img src="/img/ФОН ПЛАНЕТА.png" alt="" />
+                    <img src={planet} alt="" />
                 </div>
             </div>
         </div>

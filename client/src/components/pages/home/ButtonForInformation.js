@@ -1,4 +1,5 @@
 import React from 'react';
+import {Link} from 'react-router-dom' 
 
 const ButtonForInformation = () => {
     return (
@@ -11,7 +12,10 @@ const ButtonForInformation = () => {
                     fill="#0024FF" fill-opacity="0.5" />
             </svg>
             <div class="text-tours">
-                <a href="/our-tours.php">Открыть список туров</a>
+                <Link className="inf-button" to={'/ourTours'}>Открыть список туров</Link>
+
+               
+                {/* <a href="/our-tours.php">Открыть список туров</a> */}
             </div>
         </div>
     );

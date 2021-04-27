@@ -48,7 +48,10 @@ const OurTours = () => {
                   </div>
                 </div>
                 <div class="planeta">
-                  <img src="`img/planets_image/`$asd" alt="" />
+                  {/* <img src="img/planets_image/${planet.img}.png" alt="" />
+                   */}
+                  <img src="../../img/planets_image/mars.png" alt="" />
+
                 </div>
               </div>
             ))}

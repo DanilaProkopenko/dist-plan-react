@@ -7,9 +7,7 @@ const Navbar = () => {
     <header>
       <div class="header">
         <div class="header__container">
-          <a href="/" class="header__logo">Свет далеких планет</a>
-
-          <Link activeClassName="header__logo" href="/">
+          <Link className="header__logo" href="/">
             Свет далеких планет
          </Link>
 

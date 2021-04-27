@@ -696,7 +696,7 @@ body {
     text-transform: uppercase;
     color: #FFFFFF;
   }
-  .button-for-tours .text-tours a {
+  .button-for-tours .text-tours .inf-button {
     color: #FFFFFF;
     text-decoration: none;
   }
@@ -722,7 +722,7 @@ body {
     text-transform: uppercase;
     color: #FFFFFF;
   }
-  .button-for-tours .text-tours a {
+  .button-for-tours .text-tours .inf-button {
     color: #FFFFFF;
     text-decoration: none;
   }

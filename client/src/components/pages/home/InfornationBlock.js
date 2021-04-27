@@ -1,5 +1,5 @@
 import React from 'react';
-
+import cosmoman from '../../../img/КОСМОНАВТ.png'
 const InfornationBlock = () => {
     return (
         <div class="block-with-information">
@@ -21,7 +21,7 @@ const InfornationBlock = () => {
             </div>
 
             <div class="space-man">
-                <img src="/img/КОСМОНАВТ.png" alt="" />
+                <img src={cosmoman} alt="" />
             </div>
         </div>
     );
