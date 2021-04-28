@@ -1,5 +1,4 @@
 import React, { useState, useEffect } from "react";
-import '../../css/our-tours.css'
 import axios from 'axios'
 import { Link } from 'react-router-dom'
 import Heading from "./ourTours/Heading";
@@ -9,12 +8,13 @@ const OurTours = () => {
 
   useEffect(() => {
     async function loadPlanets() {
-      const result = await axios.get("http://localhost:4000/api/get");
+      const result = await axios.get("http://localhost:5000/api/get");
       setPlanet(result.data);
       console.log("Стейт planet", result.data)
     }
     loadPlanets()
   }, []);
+  
 
   return (
     <div className="content">
@@ -43,7 +43,7 @@ const OurTours = () => {
                   </div>
                 </div>
                 <div className="planeta">
-                  <img src="../../img/planets_image/mars.png" alt="" />
+                  <img src={require(`../../../public/planets_image/${planet.planet_image}.png`).default} alt="" />
                 </div>
               </div>
             ))}

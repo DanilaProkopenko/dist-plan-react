@@ -1,0 +1,395 @@
+body {
+    background-color     : #000;
+    background-image     : url(/img/ФОН-ЗВЕЗДЫ.png);
+    background-attachment: fixed;
+
+
+}
+
+
+
+.main-content {
+    width     : 100%;
+    margin-top: 100px;
+
+    .container {
+        width              : 80%;
+        margin             : auto;
+        // background-color: rgba(255, 0, 179, 0.753);
+    }
+
+    .heading {
+        margin-bottom: 50px;
+
+        .text {
+            font-family   : Montserrat;
+            font-style    : normal;
+            font-weight   : normal;
+            line-height   : 24px;
+            letter-spacing: 1.1em;
+            text-transform: uppercase;
+
+            color: #FFFFFF;
+
+            text-align: center;
+        }
+
+        @media (max-width:320px) {
+            font-size: 16px;
+        }
+
+        @media (min-width:768px) {
+            font-size: 20px;
+        }
+
+        @media (min-width:1025px) {
+            font-size: 40px;
+        }
+    }
+
+    .planet-cart {
+        overflow: hidden;
+
+        max-width: 1214px;
+        min-width: 90px;
+
+        margin       : auto;
+
+        @media (min-width:768px) {
+            margin-bottom: 200px;
+            padding      : 60px;
+        }
+
+        @media (max-width:767px) {
+            margin-bottom: 50px;
+            padding      : 30px;
+        }
+
+        background     : rgba(91, 91, 91, 0.05);
+        border-radius  : 60px;
+        backdrop-filter: blur(5px);
+
+
+        .information {
+            p {
+                margin-top: 30px;
+            }
+
+            .under-text {
+
+                font-family   : Montserrat;
+                font-style    : normal;
+                font-weight   : bold;
+                font-size     : 20px;
+                line-height   : 24px;
+                letter-spacing: 0.325em;
+                text-transform: uppercase;
+
+                color: #FFFFFF;
+            }
+
+            .bottom_text {
+                min-width : 200px;
+                margin-top: 20px;
+
+                font-family: Montserrat;
+                font-style : normal;
+                font-weight: 300;
+                font-size  : 16px;
+                line-height: 20px;
+
+                color: #FFFFFF;
+
+            }
+            .planeta {
+
+                margin   : auto;
+                min-width: 200px;
+                max-width: 350px;
+
+                @media (max-width:320px) {
+                    width: 200px;
+                }
+
+                @media (min-width:769px) {
+                    margin-top: 70px;
+                    width     : 200px;
+
+                    margin-right : 0;
+                    float        : right;
+                }
+
+                @media (min-width:1025px) {
+                    margin-top: 70px;
+                    width     : 300px;
+                }
+
+                img {
+                    min-width: 200px;
+                    max-width: 350px;
+
+                    @media (max-width:320px) {
+                        width: 200px;
+                    }
+
+                    @media (min-width:769px) {
+                        width: 250px;
+                    margin       : auto;
+
+                    }
+
+                    @media (min-width:1025px) {
+                        width: 300px;
+                    }
+                }
+            }
+            // @media (min-width:768px) {
+            //     .planeta {
+            //         width        : 370px;
+            //         height       : 370px;
+            //         margin       : auto;
+            //         margin-right : 0;
+            //         float        : right;
+            //         border-radius: 50%;
+
+
+            //         img {
+            //             width : 350px;
+            //             height: 350px;
+            //         }
+            //     }
+            // }
+
+            // @media (max-width:767px) {
+            //     .planeta {
+            //         width        : 370px;
+            //         height       : 370px;
+            //         border-radius: 50%;
+            //         margin: auto;
+
+            //         img {
+            //             width : 350px;
+            //             height: 350px;
+            //         }
+            //     }
+            // }
+
+            .bottom_planet_text {
+                margin-top: 20px;
+
+                font-family: Montserrat;
+                font-style : normal;
+                font-weight: 300;
+                font-size  : 16px;
+                line-height: 20px;
+
+                color: #FFFFFF;
+            }
+
+
+            .characteristic {
+                margin: 100px 0;
+
+                font-family: Montserrat;
+                font-style : normal;
+                font-weight: 300;
+                font-size  : 16px;
+                line-height: 20px;
+                /* identical to box height */
+
+                letter-spacing: 0.325em;
+                text-transform: uppercase;
+
+                color: #FFFFFF;
+
+                p {
+                    margin-top: 50px;
+                }
+            }
+            .button-for-cart-planet {
+
+                margin    : auto;
+                width     : 190px;
+                height    : 60px;
+                position  : relative;
+                margin-top: 70px;
+    
+                background   : linear-gradient(90deg, #00041C 0%, rgba(0, 11, 78, 0) 100%);
+                border-radius: 34px;
+    
+    
+                .text-for-button {
+                    font-family: Century Gothic;
+                    font-style : normal;
+                    font-weight: bold;
+                    font-size  : 20px;
+                    line-height: 25px;
+                    /* identical to box height */
+                    @media (max-width:768px) {
+                        font-size: 16px;
+                    }
+                    letter-spacing: 0.325em;
+                    text-transform: uppercase;
+    
+                    color: #FFFFFF;
+    
+                    position: absolute;
+                    top     : 15px;
+                    left    : 20px;
+                }
+            }
+            // .button-for-cart-planet {
+            //     margin    : auto;
+            //     width     : 350px;
+            //     height    : 60px;
+            //     position  : relative;
+            //     margin-top: 70px;
+
+            //     background   : linear-gradient(90deg, #00041C 0%, rgba(0, 11, 78, 0) 100%);
+            //     border-radius: 34px;
+
+
+            //     .text-for-button {
+            //         font-family: Century Gothic;
+            //         font-style : normal;
+            //         font-weight: bold;
+            //         font-size  : 20px;
+            //         line-height: 25px;
+            //         /* identical to box height */
+
+            //         letter-spacing: 0.325em;
+            //         text-transform: uppercase;
+
+            //         color: #FFFFFF;
+
+            //         position: absolute;
+            //         top     : 15px;
+            //         left    : 20px;
+            //     }
+            // }
+
+
+
+        }
+
+
+    }
+}
+
+//slider
+.slick-slider {
+    overflow-x: hidden;
+
+    margin: auto;
+
+    .slick-track {
+        display    : flex;
+        align-items: flex-start;
+    }
+
+    /*Конкретный слайдер*/
+    .slider {
+        height  : 90%;
+        padding : 10px 0;
+        position: relative;
+
+    }
+
+    .slider .slick-slide {
+        margin: 0 15px;
+    }
+
+    .slider .slick-arrow {
+        position : absolute;
+        top      : 40%;
+        margin   : -10px 0 0 0;
+        z-index  : 2;
+        font-size: 0;
+    }
+
+    .slider .slick-arrow.slick-prev {
+        left      : 10%;
+        border    : none;
+        background: url("../images/arrow_left.png") 0 0/ 50% no-repeat;
+        width     : 50px;
+        height    : 50px;
+    }
+
+    .slider .slick-arrow.slick-next {
+        right     : 8%;
+        border    : none;
+        background: url('../images/arrow_right.png') 0 / 50% no-repeat;
+        width     : 50px;
+        height    : 50px;
+    }
+
+    .slider .slick-dots {
+        display: flex;
+        ;
+        align-items    : center;
+        justify-content: center;
+    }
+
+    .slider .slick-dots li {
+        list-style: none;
+        margin    : 0 10px;
+    }
+
+    /* Активная точка */
+    .slider .slick-dots li.slick-active button {
+        background-color: rgba(0, 0, 0, 0.5);
+        opacity         : 1;
+    }
+
+    /* Элемент точки */
+    .slider .slick-dots li button {
+        font-size       : 0px;
+        width           : 15px;
+        height          : 15px;
+        background-color: rgba(240, 240, 240, 1);
+        opacity         : 0, 5;
+        border          : none;
+        border-radius   : 100%;
+        margin-top      : 20px;
+    }
+
+    .slider__item {
+        transition: all 0.3s ease 0s;
+        opacity   : 0.4;
+        text-align: center;
+    }
+
+    .slider__item.slick-center {
+        opacity: 1;
+    }
+
+    .slider img {
+        box-shadow   : 0px 0px 12px;
+        border-radius: 10px;
+        width        : 565px;
+    }
+
+    .slider__item img {
+        width: 400px;
+    }
+}
+
+.slick-slider {
+    margin-top: 100px;
+
+    .text {
+        font-family   : Montserrat;
+        font-style    : normal;
+        font-weight   : 300;
+        font-size     : 20px;
+        line-height   : 24px;
+        letter-spacing: 0.325em;
+        text-transform: uppercase;
+
+        color: #FFFFFF;
+
+        text-align: center;
+
+        margin-bottom: 50px;
+    }
+}

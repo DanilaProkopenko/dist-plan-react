@@ -15,7 +15,7 @@ app.use(cors())
 app.use(express.json())
 app.use(bodyParser.urlencoded({ extended: true }))
 
-const serverHost = 4000
+const serverHost = 5000
 app.listen(serverHost, () => {
     console.log(`server start on port ${serverHost}`)
 })
@@ -32,7 +32,7 @@ app.get("/api/get", (req, res) => {
         console.log("I think we fetched users successfully")
 
         const users = rows.map((row) => {
-            return { id: row.id, name: row.name, shot_discription: row.shot_discription }
+                return { id: row.id, name: row.name, shot_discription: row.shot_discription, planet_image: row.planet_image  }
         })
 
         res.json(users)

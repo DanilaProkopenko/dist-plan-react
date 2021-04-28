@@ -3,7 +3,6 @@ body {
   background-color: #000;
   overflow-x: initial;
   background-color: #000;
-  /* background-image: url(/img/ФОН-ЗВЕЗДЫ.png); */
   background-image: url(../img/ФОН-ЗВЕЗДЫ.png);
   background-attachment: fixed;
 }
@@ -40,6 +39,7 @@ body {
 .main-content .heading .text .under-text {
   font-family: Roboto;
   font-style: normal;
+  text-align: left;
   color: #ffffff;
 }
 
@@ -129,7 +129,7 @@ body {
 
 @media (min-width: 1200px) {
   .main-content {
-    padding-top: 10%;
+    padding-top: 15%;
   }
   .main-content .heading {
     width: 784px;
@@ -633,7 +633,6 @@ body {
 .about {
   width: 100%;
   background-image: url(../img/ФОН-ЗВЕЗДЫ.png);
-
   background-attachment: fixed;
   padding-top: 100px;
 }
@@ -696,7 +695,7 @@ body {
     text-transform: uppercase;
     color: #FFFFFF;
   }
-  .button-for-tours .text-tours .inf-button {
+  .button-for-tours .text-tours a {
     color: #FFFFFF;
     text-decoration: none;
   }
@@ -722,7 +721,7 @@ body {
     text-transform: uppercase;
     color: #FFFFFF;
   }
-  .button-for-tours .text-tours .inf-button {
+  .button-for-tours .text-tours a {
     color: #FFFFFF;
     text-decoration: none;
   }
@@ -754,31 +753,6 @@ body {
 .slick-slider .slider .slick-slide {
   margin: 0 15px;
 }
-
-/*  БЫЛИ СТРЕЛКИ ДЛЯ СЛАЙДЕРА ARROW */
-/* .slick-slider .slider .slick-arrow {
-  position: absolute;
-  top: 40%;
-  margin: -10px 0 0 0;
-  z-index: 2;
-  font-size: 0;
-}
-
-.slick-slider .slider .slick-arrow.slick-prev {
-  left: 10%;
-  border: none;
-  background: url("../images/arrow_left.png") 0 0/50% no-repeat;
-  width: 50px;
-  height: 50px;
-}
-
-.slick-slider .slider .slick-arrow.slick-next {
-  right: 8%;
-  border: none;
-  background: url("../images/arrow_right.png") 0/50% no-repeat;
-  width: 50px;
-  height: 50px;
-} */
 
 .slick-slider .slider .slick-dots {
   display: -webkit-box;

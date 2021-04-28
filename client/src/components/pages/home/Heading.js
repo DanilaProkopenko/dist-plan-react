@@ -2,7 +2,7 @@ import React from 'react';
 import planet from '../../../img/ФОН ПЛАНЕТА.png'
 const Heading = () => {
     return (
-        <div className="heading">
+        <div className="heading-with-planet">
             <div className="grid">
                 <div className="square">
 

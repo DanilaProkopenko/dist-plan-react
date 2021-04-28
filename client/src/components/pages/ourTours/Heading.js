@@ -5,7 +5,7 @@ const Heading = () => {
 
 
   return (
-    <div className="headings">
+    <div className="heading">
       <div className="text">
         Наши туры
                         </div>

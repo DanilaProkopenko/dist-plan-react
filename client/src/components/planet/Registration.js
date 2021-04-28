@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
-import '../../css/our-tours.css'
+// import '../../css/our-tours.css'
 import axios from 'axios'
-import '../../css/registrationcopy.css'
+// import '../../css/registrationcopy.css'
 import {useParams} from 'react-router-dom'
 import Heading from "./registration/Heading";
 import Button from "./registration/Button";
@@ -17,7 +17,7 @@ const Registration = () => {
     
       useEffect(() => {
         async function loadPlanet() {
-          const result = await axios.get(`http://localhost:4000/api/${id}`);
+          const result = await axios.get(`http://localhost:5000/api/${id}`);
           setPlanet(result.data[0]);
           console.log("Стейт планеты ", result.data)
         }
@@ -32,7 +32,7 @@ const Registration = () => {
             <div className="main-content">
                <Heading />
 
-                <div className="planet-cart">
+                <div className="planet-cart-registration">
                     <div className="container">
                         <div className="under-text">
                             {planet.name}

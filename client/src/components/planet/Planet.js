@@ -1,7 +1,9 @@
 import React, { useState, useEffect } from "react";
 import { Link, useParams } from "react-router-dom";
 import axios from "axios";
-import '../../css/about-planet.css'
+// import '../../css/about-planet.css'
+// import '../../../public/planets_image'
+// import '../../../public/'
 
 const Planet = () => {
   const [planet, setPlanet] = useState({
@@ -9,19 +11,22 @@ const Planet = () => {
     long_discription_1: "",
     long_discription_2: "",
     long_discription_3: "",
-    long_discription_4: ""
+    long_discription_4: "",
+    planet_image: ""
   });
 
   const { id } = useParams();
 
   useEffect(() => {
     async function loadPlanet() {
-      const result = await axios.get(`http://localhost:4000/api/${id}`);
+      const result = await axios.get(`http://localhost:5000/api/${id}`);
       setPlanet(result.data[0]);
       console.log("Стейт планеты ", result.data)
     }
     loadPlanet()
   }, [id]);
+
+  // const image = require('../../../public/planets_image/' + planet.planet_image + ".png").default
 
   return (
     <div className="content">
@@ -34,10 +39,10 @@ const Planet = () => {
               </div>
             </div>
 
-            <div className="planet-cart">
+            <div className="cart-about-planet">
               <div className="information">
                 <div className="planeta">
-                  <img src="img/planets_image/" alt="" />
+                <img src={require("../../../public/planets_image/" + planet.planet_image + ".png").default} alt="" />
                 </div>
                 <div className="bottom_text">
                   <p>{planet.long_discription_1}</p>
@@ -51,7 +56,7 @@ const Planet = () => {
 
                 </div>
 
-                <div className="slick-slider">
+                {/* <div className="slick-slider">
                   <div className="text">Галерея</div>
                   <div className="wrapper">
                     <div className="slider">
@@ -66,7 +71,7 @@ const Planet = () => {
                       </div>
                     </div>
                   </div>
-                </div>
+                </div> */}
 
                 <div className="characteristic">
                   <p>Цена за одного человека: 20000 рублей</p>
@@ -76,7 +81,7 @@ const Planet = () => {
 
                 <div className="button-for-cart-planet">
                   <div className="text-for-button">
-                    <Link to={`/planet/registration/${planet.id}`}>
+                    <Link className="text-for-button" to={`/planet/registration/${planet.id}`}>
                       Отправиться
                     </Link>
                   </div>

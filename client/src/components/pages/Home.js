@@ -1,5 +1,5 @@
 import React from "react";
-import '../../css/main-page.css'
+// import '../../css/main-page.css'
 
 import Heading from './home/Heading';
 import ButtonForHeading from './home/ButtonForHeading';
